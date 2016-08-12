@@ -1,6 +1,6 @@
-# OctoPrint-M117PopUp
+# OctoPrint-M117NavBar
 
-Octoprint plugin to send M117 gcode messages to OctoPrint's built in alerting system.
+Octoprint plugin to send M117 gcode messages to OctoPrint's navbar/header.
 
 Note: this plugin does NOT work with files on the SD card.
 
@@ -11,4 +11,4 @@ Note: this plugin does NOT work with files on the SD card.
 
 Install via the bundled Plugin Manager or manually using this URL:
 
-https://github.com/jneilliii/OctoPrint-M117PopUp/archive/master.zip
+https://github.com/jneilliii/OctoPrint-M117NavBar/archive/master.zip

@@ -1,20 +1,16 @@
 $(function() {
-    function M117PopUpViewModel(parameters) {
+    function M117NavBarViewModel(parameters) {
         var self = this;
 
 		self.onDataUpdaterPluginMessage = function(plugin, data) {
-            if (plugin != "M117PopUp") {
+            if (plugin != "M117NavBar") {
 				// console.log('Ignoring '+plugin);
                 return;
             }
 			
 			if(data.type == "popup") {
 				// console.log(data.msg);
-				new PNotify({
-					title: 'M117 Pop Up Message',
-					text: data.msg,
-					type: 'info'
-					});
+				$("#M117NavBar").text(data.msg);
 			}
 		}
 
@@ -24,7 +20,7 @@ $(function() {
     // information to the global variable OCTOPRINT_VIEWMODELS
     ADDITIONAL_VIEWMODELS.push([
         // This is the constructor to call for instantiating the plugin
-        M117PopUpViewModel,
+        M117NavBarViewModel,
 
         // This is a list of dependencies to inject into the plugin, the order which you request
         // here is the order in which the dependencies will be injected into your view model upon
