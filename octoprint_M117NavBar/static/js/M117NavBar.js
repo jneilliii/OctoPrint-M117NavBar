@@ -2,7 +2,7 @@ $(function() {
     function M117NavBarViewModel(parameters) {
         var self = this;
 		
-		self.loginState = parameters[0]
+		self.loginState = parameters[0];
 
 		self.onDataUpdaterPluginMessage = function(plugin, data) {
             if (plugin != "M117NavBar") {
