@@ -10,7 +10,7 @@ $(function() {
 			
 			if(data.type == "popup") {
 				// console.log(data.msg);
-				$("#M117NavBar").text(data.msg);
+				$("#M117NavBar").text(data.msg.toUpperCase());
 			}
 		}
 
