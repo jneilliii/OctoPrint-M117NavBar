@@ -30,6 +30,6 @@ $(function() {
         ["loginStateViewModel"],
 
         // Finally, this is the list of selectors for all elements we want this view model to be bound to.
-        []
+        ["#M117NavBarMenu"]
     ]);
 });
