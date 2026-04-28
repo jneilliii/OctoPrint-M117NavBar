@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "OctoPrint-M117NavBar"
-version = "0.1.1"
+version = "0.1.2"
 description = "Simple plugin that sends M117 messages in gcode to the web interface."
 authors = [
     { name = "jneilliii", email = "jneilliii+octoprint@gmail.com" },
